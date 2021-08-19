@@ -20,24 +20,232 @@ function_
 class_
 constant_
 -->
-    <div id="app" class="h-full" data-v-app>
-    <div class="min-h-full grid grid-layout">
-      <div id="container" class="grid grid-layout-container lg:custom-scroll">
-        <div source="main" tag="stable" category="general" file="welcome"><div class="lg:flex mx-auto w-full max-w-screen-2xl">
-          <div class="lg:flex mx-auto w-full max-w-screen-2xl">
-    <div class="example gird">
-      <pre class="my-0">
-      <code>
-        <span class="hljs-keyword">const</span> BotM  <span class="hljs-built_in">require</span>(<span class="hljs-string">'discordbotyd.js'</span>)
+    <div id="app" class="h-full" data-v-app=""><div class="min-h-full grid grid-layout"><div class="sticky top-0 z-20"><header class="bg-discord-blurple-560"><div class="max-w-7xl mx-auto px-2 sm:px-4 md:flex md:justify-between lg:px-8"><nav class="hidden md:flex md:py-2 md:space-x-4 lg:space-x-8" aria-label="Global navigation"><a href="#/" class="text-gray-200
+    hover:bg-discord-blurple-630 hover:text-white
+    rounded-md
+    py-2
+    px-3
+    inline-flex
+    items-center
+    text-sm
+    font-semibold
+    focus:outline-none
+    focus-visible:ring-1 focus-visible:ring-white"> discord.js </a><a href="#/docs" class="bg-discord-blurple-600 text-gray-200
+    hover:bg-discord-blurple-630 hover:text-white
+    rounded-md
+    py-2
+    px-3
+    inline-flex
+    items-center
+    text-sm
+    font-semibold
+    focus:outline-none
+    focus-visible:ring-1 focus-visible:ring-white"> Documentation </a><a href="https://github.com/discordjs/discord.js" class="
+    text-gray-200
+    hover:bg-discord-blurple-630 hover:text-white
+    rounded-md
+    py-2
+    px-3
+    inline-flex
+    items-center
+    text-sm
+    font-semibold
+    focus:outline-none
+    focus-visible:ring-1 focus-visible:ring-white
+" target="_blank" rel="noopener"><span class="mr-2">GitHub</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="h-5 w-5"><g fill="none"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a><a href="https://discordjs.guide" class="
+    text-gray-200
+    hover:bg-discord-blurple-630 hover:text-white
+    rounded-md
+    py-2
+    px-3
+    inline-flex
+    items-center
+    text-sm
+    font-semibold
+    focus:outline-none
+    focus-visible:ring-1 focus-visible:ring-white
+" target="_blank" rel="noopener"><span class="mr-2">Guide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="h-5 w-5"><g fill="none"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a></nav><div class="relative h-16 flex md:max-w-md md:w-full lg:max-w-lg"><div class="relative z-10 flex items-center md:hidden"><button class="
+        rounded-md
+        p-2
+        inline-flex
+        items-center
+        justify-center
+        hover:bg-discord-blurple-630
+        focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white focus:bg-discord-blurple-630
+    " aria-label="Switch to light theme"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="fill-current text-gray-200 hover:text-white h-6 w-6" aria-hidden="true"><g fill="none"><path d="M20.354 15.354A9 9 0 0 1 8.646 3.646A9.003 9.003 0 0 0 12 21a9.003 9.003 0 0 0 8.354-5.646z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button></div><div class="relative z-0 flex-1 px-2 flex lg:gap-2 items-center justify-center md:justify-end"><button class="
+        hidden
+        md:block
+        rounded-md
+        p-2
+        hover:bg-discord-blurple-630
+        focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white
+    " aria-label="Switch to light theme"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="fill-current text-gray-200 hover:text-white h-6 w-6" aria-hidden="true"><g fill="none"><path d="M20.354 15.354A9 9 0 0 1 8.646 3.646A9.003 9.003 0 0 0 12 21a9.003 9.003 0 0 0 8.354-5.646z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button><div class="w-full sm:max-w-lg lg:max-w-xs"><label for="search" class="sr-only">Search</label><div class="relative"><div class="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="h-5 w-5 text-gray-200"><g fill="none"><path d="M21 21l-6-6m2-5a7 7 0 1 1-14 0a7 7 0 0 1 14 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></div><input id="search" name="search" class="
+                block
+                w-full
+                bg-discord-blurple-600
+                border border-transparent
+                rounded-md
+                py-2
+                pl-10
+                pr-3
+                text-base text-white
+                placeholder-gray-200
+                focus:outline-none
+                focus:bg-discord-blurple-630
+                focus:text-gray-200
+                focus:placeholder-gray-200
+                focus:ring-2
+                focus:ring-inset
+                focus:ring-white
+                lg:focus:ring-1
+            " placeholder="Search" type="search" autocomplete="off" autocapitalize="off" autocorrect="off"><!----><!----></div></div></div><div class="relative z-10 flex items-center md:hidden"><button type="button" class="
+        rounded-md
+        p-2
+        inline-flex
+        items-center
+        justify-center
+        text-gray-200
+        hover:bg-discord-blurple-630 hover:text-white
+        focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
+    " aria-controls="mobile-menu" aria-expanded="false"><span class="sr-only">Open menu</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="block" aria-hidden="true"><g fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="hidden" aria-hidden="true"><g fill="none"><path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button></div></div></div><!----></header></div><div id="container" class="grid grid-layout-container lg:custom-scroll"><div class="bg-white dark:bg-[#1d1d1d]"><div source="main" tag="stable" category="general" file="welcome"><div class="lg:flex mx-auto w-full max-w-screen-2xl"><div class="block fixed lg:hidden z-10 transition-transform transform-gpu"><button type="button" class="
+rounded-md rounded-l-none rounded-tr-none
+p-3
+inline-flex
+items-center
+justify-center
+text-gray-200
+bg-discord-blurple-600
+hover:bg-discord-blurple-630 hover:text-white
+focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
+" aria-controls="sidebar-menu" aria-expanded="false"><span class="sr-only">Open menu</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="h-6 w-6 block" aria-hidden="true"><g fill="none"><path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button></div><div class="inline-block fixed lg:block lg:relative z-10 sidebar-color transition transform-gpu -translate-x-full lg:translate-x-0"><div class="sticky top-0 overflow-y-auto overflow-x-hidden w-72 md:w-80 lg:custom-scroll sidebar-height"><nav class="my-5 px-2 space-y-1 z-10"><ul><li class="pb-1"><button id="headlessui-disclosure-button-1" type="button" aria-expanded="true" class="w-full focus:outline-none" tabindex="-1" aria-controls="headlessui-disclosure-panel-2"><div class="text-gray-800 dark:text-gray-100 py-2 text-md font-bold uppercase flex gap-1 items-center"><button class="leading-3 rounded-md p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-white" aria-expanded="true"><span class="sr-only">Shrink</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="inline-block hidden" aria-hidden="true"><g fill="none"><path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="inline-block" aria-hidden="true"><g fill="none"><path d="M19 9l-7 7l-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button> Docs settings </div></button><ul id="headlessui-disclosure-panel-2" class="px-2 space-y-3"><li><div class="relative mt-1"><button id="headlessui-listbox-button-3" type="button" aria-haspopup="true" aria-expanded="false" class="relative
+                            w-full
+                            py-1
+                            px-3
+                            text-left
+                            flex
+                            justify-between
+                            items-center
+                            dark:text-gray-200
+                            rounded
+                            bg-gray-100
+                            dark:bg-[#1d1d1d]
+                            border
+                            dark:border-[#101010]
+                            cursor-pointer"><span class="truncate">Main library</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M19 9l-7 7l-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><!----></button><!----></div></li><li><div class="relative mt-1"><button id="headlessui-listbox-button-5" type="button" aria-haspopup="true" aria-expanded="false" class="relative
+                            w-full
+                            py-1
+                            px-3
+                            text-left
+                            flex
+                            justify-between
+                            items-center
+                            dark:text-gray-200
+                            rounded
+                            bg-gray-100
+                            dark:bg-[#1d1d1d]
+                            border
+                            dark:border-[#101010]
+                            cursor-pointer"><span class="truncate">stable</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M19 9l-7 7l-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><!----></button><!----></div></li><li><div class="flex justify-between px-2"><label id="headlessui-label-7" class="mr-4 dark:text-gray-200">Show privates</label><button modelvalue="false" id="headlessui-switch-8" role="switch" tabindex="0" aria-checked="false" type="button" class="relative inline-flex h-6 items-center rounded-full w-11 focus:outline-none bg-gray-500" aria-labelledby="headlessui-label-7"><span class="inline-block w-4 h-4 bg-white rounded-full transition transform-gpu z-20 translate-x-1"></span></button></div></li></ul></li><li><button id="headlessui-disclosure-button-9" type="button" aria-expanded="false" class="w-full focus:outline-none" tabindex="-1"><div class="text-gray-800 dark:text-gray-100 py-2 text-md font-bold uppercase flex gap-1 items-center"><button class="leading-3 rounded-md p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-white" aria-expanded="false"><span class="sr-only">Expand</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="inline-block" aria-hidden="true"><g fill="none"><path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="inline-block hidden" aria-hidden="true"><g fill="none"><path d="M19 9l-7 7l-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button><span class="truncate">General</span></div></button><!----></li><li><button id="headlessui-disclosure-button-11" type="button" aria-expanded="true" class="w-full focus:outline-none" tabindex="-1" aria-controls="headlessui-disclosure-panel-12"><div class="text-gray-800 dark:text-gray-100 py-2 text-md font-bold uppercase flex gap-1 items-center"><button class="leading-3 rounded-md p-1 focus:outline-none focus-visible:ring-1 focus-visible:ring-white" aria-expanded="true"><span class="sr-only">Shrink</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="inline-block hidden" aria-hidden="true"><g fill="none"><path d="M9 5l7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="inline-block" aria-hidden="true"><g fill="none"><path d="M19 9l-7 7l-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></button> Classes </div></button><ul id="headlessui-disclosure-panel-12"><li><a href="/about/main/stable/class/lavalink" class="text-gray-600
+                dark:text-gray-300
+                border-l-4 border-transparent
+                rounded-sm
+                hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+                dark:hover:text-gray-100
+                group
+                flex
+                items-center
+                px-3
+                py-2
+                text-sm
+                font-semibold
+                focus:outline-none
+                focus-visible:ring-1 focus-visible:ring-white" exact=""><span class="truncate">Lavalink</span></a></li><li><a href="/about/main/stable/class/music" class="text-gray-600
+                dark:text-gray-300
+                border-l-4 border-transparent
+                rounded-sm
+                hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+                dark:hover:text-gray-100
+                group
+                flex
+                items-center
+                px-3
+                py-2
+                text-sm
+                font-semibold
+                focus:outline-none
+                focus-visible:ring-1 focus-visible:ring-white" exact=""><span class="truncate">Music</span></a></li><li><a href="/about/main/stable/class/economy" class="text-gray-600
+                dark:text-gray-300
+                border-l-4 border-transparent
+                rounded-sm
+                hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+                dark:hover:text-gray-100
+                group
+                flex
+                items-center
+                px-3
+                py-2
+                text-sm
+                font-semibold
+                focus:outline-none
+                focus-visible:ring-1 focus-visible:ring-white" exact=""><span class="truncate">Economy</span></a></li><li><a href="/about/main/stable/class/baseclient" class="text-gray-600
+                dark:text-gray-300
+                border-l-4 border-transparent
+                rounded-sm
+                hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+                dark:hover:text-gray-100
+                group
+                flex
+                items-center
+                px-3
+                py-2
+                text-sm
+                font-semibold
+                focus:outline-none
+                focus-visible:ring-1 focus-visible:ring-white" exact=""><span class="truncate">BaseClient</span></a></li></ul></li></ul></nav></div></div><div class="
+prose prose-discord
+dark:prose-light
+mx-auto
+py-16
+px-4
+break-words-legacy
+sm:px-8
+lg:py-8
+w-full
+max-w-4xl
+lg:max-w-full
+" source="main" tag="stable" category="general" file="welcome"><a href="https://github.com/DAREALYTYGRUNN1NGARK456/discordbotyd.js/blob/stable/README.md" target="_blank" rel="noopener" aria-label="Go to source" class="float-right mt-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="text-xl
+fill-current
+text-discord-blurple-530
+hover:text-discord-blurple-500
+dark:text-discord-blurple-330 dark:hover:text-discord-blurple-300" aria-hidden="true"><g fill="none"><path d="M10 20l4-16m4 4l4 4l-4 4M6 16l-4-4l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a><div><div align="center">
+
+
+</div>
+<div class="grid"><pre class="my-0"><code>
+    <span class="hljs-keyword">const</span> BotM  <span class="hljs-built_in">require</span>(<span class="hljs-string">'discordbotyd.js'</span>)
         
-        <span class="hljs-variable language_">BotM</span><span class="hljs-title function_"></span>(<span class="hljs-attr">Token</span>,<span class="hljs-attr">ID</span>, <span class="hljs-attr">Default Prefix</span>)
-      </code>
-      </pre>
-    </div>
-    </div>
-    </div>
-      </div>
-      </div>
-      </div>
+    <span class="hljs-variable language_">BotM</span><span class="hljs-title function_"></span>(<span class="hljs-attr">Token</span>,<span class="hljs-attr">ID</span>, <span class="hljs-attr">Default Prefix</span>)
+</code></pre></div><h2 id="links">Links</h2>
+<ul>
+<li><a href="https://discord-bot-yd.js.org/">Website</a> (<a target="_blank" rel="noopener" href="https://github.com/discordjs/website">source <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>)</li>
+<li><a href="https://discord-bot-yd.js.org/about/">Documentation</a></li>
+<li><a target="_blank" rel="noopener" href="https://discordjs.guide/">Guide <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a> (<a target="_blank" rel="noopener" href="https://github.com/discordjs/guide">source <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>)
+See also the <a target="_blank" rel="noopener" href="https://discordjs.guide/additional-info/changes-in-v13.html">Update Guide <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>, including updated and removed items in the library.</li>
+<li><a target="_blank" rel="noopener" href="https://discord-bot-yd.js.org/server/">DiscordBotYD.js Discord server <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+<li><a target="_blank" rel="noopener" href="https://discord.gg/discord-api">Discord API Discord server <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DAREALYTYGRUNN1NGARK456/discordbotyd.js">GitHub <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/discordbotyd.js">NPM <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+</ul>
+<h3 id="extensions">Extensions</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/discord-rpc">RPC <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a> (<a target="_blank" rel="noopener" href="https://github.com/discordjs/RPC">source <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>)</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
+<a href="https://discord-bot-yd.js.org/about">documentation</a>.<br>See <a target="_blank" rel="noopener" href="https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md">the contribution guide <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a> if you'd like to submit a PR.</p>
+<h2 id="help">Help</h2>
+<p>If you don't understand something in the documentation, you are experiencing problems, or you just need a gentle
+nudge in the right direction, please don't hesitate to join our official <a target="_blank" rel="noopener" href="https://discord.gg/djs">Discord.js Server <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>.</p>
+</div></div></div>
   </body>
 </html>
